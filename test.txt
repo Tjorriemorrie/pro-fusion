@@ -1,0 +1,11 @@
+ 
+MySQL and PHP
+Given the info in the attachment source_cdr.sql:
+        1. Create a stored function/procedure to retrieve the data and store on a table in separate database (table create info in: dest_table.sql)
+        2. Create a php CLI script to do the same where the source and destination servers are not the same host.
+	2.1. A progress report needs to be shown as data is transferred, as well as the total transfer time taken up once completed.
+	2.2. If the process is cancelled or fails for any other reason identify a unique field on destination_cdr to prevent duplication. The import script can use the cdr_id field on source_cdr table to check which cdr's have been moved and which still need to be moved.
+        3. Create an audit log for the destination table in dest_table.sql on a table called cdr_log;
+	3.1. Update the code from item 2 to save the data in the new audit log table.
+
+Once completed, please sent all code and database dumps please.
